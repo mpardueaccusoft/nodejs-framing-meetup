@@ -14,6 +14,6 @@ Service.prototype.getData = function () {
   return this.connection.getData();
 }
 
-var service = new Service();
+const service = new Service();
 service.getData()
   .then(console.log);

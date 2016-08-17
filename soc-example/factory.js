@@ -21,7 +21,9 @@ function Factory(...serviceTypes) {
 
 Factory.prototype.createInstance = function (typeName) {
   const type = this.services[typeName];
-  return new (type.bind(null, ...(type.requires || []).map((typeName) => this.createInstance(typeName))))();
+  const serviceArgs = (type.requires || []).map(typeName => this.createInstance(typeName));
+  const typeConstructor = type.bind(null, ...serviceArgs);
+  return new typeConstructor();
 }
 
 const factory = new Factory(Service, DBConnection);
