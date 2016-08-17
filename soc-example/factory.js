@@ -19,14 +19,14 @@ function Factory(...serviceTypes) {
   serviceTypes.forEach((service) => this.services[service.name] = service);
 }
 
-Factory.prototype.create = function (typeName) {
+Factory.prototype.createInstance = function (typeName) {
   const type = this.services[typeName];
-  return new (type.bind(null, ...(type.requires || []).map((typeName) => this.create(typeName))))();
+  return new (type.bind(null, ...(type.requires || []).map((typeName) => this.createInstance(typeName))))();
 }
 
 const factory = new Factory(Service, DBConnection);
 
-const service = factory.create('Service');
+const service = factory.createInstance('Service');
 
 service.getData()
   .then(console.log);
