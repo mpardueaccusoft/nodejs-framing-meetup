@@ -1,0 +1,14 @@
+{
+  "name": "error-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Michael Pardue <mpardue@accusoft.com>",
+  "license": "ISC",
+  "dependencies": {
+    "framing": "git+ssh://git@git.jpg.com:saas/acs-module-framing.git#version-3"
+  }
+}
