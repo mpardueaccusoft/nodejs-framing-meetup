@@ -1,0 +1,15 @@
+{
+  "name": "mmo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "eslint": "^3.2.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Michael Pardue <mpardue@accusoft.com>",
+  "license": "ISC"
+}

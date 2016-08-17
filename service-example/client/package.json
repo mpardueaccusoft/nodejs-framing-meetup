@@ -1,0 +1,29 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Michael Pardue <mpardue@accusoft.com>",
+  "license": "ISC",
+  "dependencies": {
+    "gulp-util": "^3.0.7",
+    "jquery": "^3.1.0",
+    "nunjucks": "^2.4.2",
+    "socket.io-client": "^1.4.8"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-watch": "^4.3.9",
+    "gulp-webpack": "^1.5.0"
+  },
+  "framing": {
+    "name": "client",
+    "imports": [
+      "real-time-comm",
+      "server"
+    ]
+  }
+}
