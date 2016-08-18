@@ -12,9 +12,9 @@
     "express": "^4.14.0",
     "framing": "git+ssh://git@git.jpg.com:saas/acs-module-framing.git#version-3",
     "client": "../client",
-    "chat": "../chat",
     "server": "../server",
     "real-time-comm": "../real-time-comm",
+    "chat": "../chat",
     "socket.io": "^1.4.8"
   }
 }

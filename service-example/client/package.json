@@ -22,7 +22,6 @@
   "framing": {
     "name": "client",
     "imports": [
-      "real-time-comm",
       "server"
     ]
   }
