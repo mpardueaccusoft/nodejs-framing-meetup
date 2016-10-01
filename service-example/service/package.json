@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.14.0",
-    "framing": "^3.0.2"
+    "framing": "^3.0.2",
     "client": "../client",
     "server": "../server",
     "real-time-comm": "../real-time-comm",
