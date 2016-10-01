@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.14.0",
-    "framing": "git+ssh://git@git.jpg.com:saas/acs-module-framing.git#version-3",
+    "framing": "^3.0.2"
     "client": "../client",
     "server": "../server",
     "real-time-comm": "../real-time-comm",

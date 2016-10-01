@@ -8,3 +8,11 @@ module.exports.initialize = () => {
       getData: () => Promise.resolve(data) 
     }));
 }
+
+module.exports.initialize = () => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      reject(new Error());
+    }, 250);
+  });
+};

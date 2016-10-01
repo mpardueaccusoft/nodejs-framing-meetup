@@ -9,7 +9,7 @@
   "author": "Michael Pardue <mpardue@accusoft.com>",
   "license": "ISC",
   "dependencies": {
-    "framing": "git+ssh://git@git.jpg.com:saas/acs-module-framing.git#version-3",
+    "framing": "^3.0.2",
     "throws-errors": "../components/throws-errors"
   }
 }

@@ -1,8 +1,6 @@
 'use strict';
 
 function DBConnection() {
-  // connection information
-
   this.getData = () => Promise.resolve([ 'data' ]);
 }
 
@@ -12,7 +10,7 @@ function Service() {
 
 Service.prototype.getData = function () {
   return this.connection.getData();
-}
+};
 
 const service = new Service();
 service.getData()
